@@ -1,111 +1,116 @@
-<div class="p-4" style="background-color: #d2dede; min-height: 100vh;">
+<div class="p-4" style="min-height: 100vh;">
 
+  <div class="container mt-4">
+    <div class="row g-4">
 
-<div class="container mt-4">
-  <div class="row g-4">
-
-    <!-- Repeat this card 10 times -->
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-      <div class="card h-100">
-        <img class="card-img-top" src="/assets/Images/AnalysisDepartment.jpg" alt="Card image cap">
-        <div class="  card-body text-center text-center">
-          <h5 class="card-title">Analysis</h5>
-          <a href="#"  >  </a>
+      <!-- Analysis -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+        <div class="card h-100"
+             [routerLink]="['/admin/Analysis']"
+             style="cursor: pointer;">
+          <img class="card-img-top" src="/assets/Images/AnalysisDepartment.jpg" alt="Analysis">
+          <div class="card-body text-center">
+            <h5 class="card-title">Analysis</h5>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- DUPLICATE CARD BELOW (10 total) -->
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-      <div class="card h-100">
-        <img class="card-img-top" src="/assets/Images/Businessdept.jpg" alt="Card image cap">
-        <div class="  card-body text-center">
-          <h5 class="card-title">Business</h5>
-          <a href="#"  >  </a>
+      <!-- Business -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+        <div class="card h-100"
+             [routerLink]="['/admin/Business']"
+             style="cursor: pointer;">
+          <img class="card-img-top" src="/assets/Images/Businessdept.jpg" alt="Business">
+          <div class="card-body text-center">
+            <h5 class="card-title">Business</h5>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-      <div class="card h-100">
-        <img class="card-img-top" src="/assets/Images/AccountsDepartment.jpg" alt="Card image cap">
-        <div class="  card-body text-center">
-          <h5 class="card-title">Accounts Dept</h5>
-          <a href="#"  >  </a>
-        </div>
-      </div>
-    </div>
 
-     <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-      <div class="card h-100">
-        <img class="card-img-top" src="/assets/scm.jpg" alt="Card image cap">
-        <div class="  card-body text-center">
-          <h5 class="card-title">Supply chain Management</h5>
-          <a href="#"  >  </a>
+      <!-- Funds -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+        <div class="card h-100"
+             [routerLink]="['/admin/Funds']"
+             style="cursor: pointer;">
+          <img class="card-img-top" src="/assets/Images/Funds.jpg" alt="Funds">
+          <div class="card-body text-center">
+            <h5 class="card-title">Funds</h5>
+          </div>
         </div>
       </div>
-    </div>
 
-     <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-      <div class="card h-100">
-        <img class="card-img-top" src="/assets/Images/AnalysisDepartment.jpg" alt="Card image cap">
-        <div class="  card-body text-center">
-          <h5 class="card-title">Project</h5>
-          <a href="#"  >  </a>
+      <!-- Supply Chain -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+        <div class="card h-100"
+             [routerLink]="['/admin/SupplyChain']"
+             style="cursor: pointer;">
+          <img class="card-img-top" src="/assets/Images/AnalysisDepartment.jpg" alt="Supply Chain">
+          <div class="card-body text-center">
+            <h5 class="card-title">Supply Chain</h5>
+          </div>
         </div>
       </div>
-    </div>
- <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-      <div class="card h-100">
-        <img class="card-img-top" src="/assets/Images/AnalysisDepartment.jpg" alt="Card image cap">
-        <div class="  card-body text-center">
-          <h5 class="card-title">Risk</h5>
-          <a href="#"  >  </a>
-        </div>
-      </div>
-    </div>
 
-     <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-      <div class="card h-100">
-        <img class="card-img-top" src="/assets/Images/AnalysisDepartment.jpg" alt="Card image cap">
-        <div class="  card-body text-center">
-          <h5 class="card-title">Human Resources</h5>
-          <a href="#"  >  </a>
+      <!-- Project -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+        <div class="card h-100"
+             [routerLink]="['/admin/Project']"
+             style="cursor: pointer;">
+          <img class="card-img-top" src="/assets/Images/AnalysisDepartment.jpg" alt="Project">
+          <div class="card-body text-center">
+            <h5 class="card-title">Project</h5>
+          </div>
         </div>
       </div>
-    </div>
 
-     <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-      <div class="card h-100">
-        <img class="card-img-top" src="/assets/Images/AnalysisDepartment.jpg" alt="Card image cap">
-        <div class="  card-body text-center">
-          <h5 class="card-title">Human Resources Management</h5>
-          <a href="#"  >  </a>
+      <!-- Risk -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+        <div class="card h-100"
+             [routerLink]="['/admin/Risk']"
+             style="cursor: pointer;">
+          <img class="card-img-top" src="/assets/Images/AnalysisDepartment.jpg" alt="Risk">
+          <div class="card-body text-center">
+            <h5 class="card-title">Risk</h5>
+          </div>
         </div>
       </div>
-    </div>
 
-     <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-      <div class="card h-100">
-        <img class="card-img-top" src="/assets/Images/AnalysisDepartment.jpg" alt="Card image cap">
-        <div class="  card-body text-center">
-          <h5 class="card-title">Statistics</h5>
-          <a href="#"  >  </a>
+      <!-- Human Resources -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+        <div class="card h-100"
+             [routerLink]="['/admin/HR']"
+             style="cursor: pointer;">
+          <img class="card-img-top" src="/assets/Images/AnalysisDepartment.jpg" alt="Human Resources">
+          <div class="card-body text-center">
+            <h5 class="card-title">Human Resources</h5>
+          </div>
         </div>
       </div>
-    </div>
 
-     <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-      <div class="card h-100">
-        <img class="card-img-top" src="/assets/Images/AnalysisDepartment.jpg" alt="Card image cap">
-        <div class="  card-body text-center">
-          <h5 class="card-title">Logistics</h5>
-          <a href="#"  >  </a>
+      <!-- Human Resources Management -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+        <div class="card h-100"
+             [routerLink]="['/admin/HRManagement']"
+             style="cursor: pointer;">
+          <img class="card-img-top" src="/assets/Images/AnalysisDepartment.jpg" alt="HR Management">
+          <div class="card-body text-center">
+            <h5 class="card-title">Human Resources Management</h5>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
 
-    <!-- continue duplicating until you have 10 cards -->
-    
+      <!-- Logistics -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+        <div class="card h-100"
+             [routerLink]="['/admin/Logistics']"
+             style="cursor: pointer;">
+          <img class="card-img-top" src="/assets/Images/logistics.jpg" alt="Logistics">
+          <div class="card-body text-center">
+            <h5 class="card-title">Logistics</h5>
+          </div>
+        </div>
+      </div>
+
+    </div>
   </div>
 </div>
