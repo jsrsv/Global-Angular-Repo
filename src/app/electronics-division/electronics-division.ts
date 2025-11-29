@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-electronics-division',
-  imports: [],
+  standalone: true,
+  imports: [RouterModule],
   templateUrl: './electronics-division.html',
-  styleUrl: './electronics-division.css',
+  styleUrls: ['./electronics-division.css'],
 })
-export class ElectronicsDivision {
-
-}
+export class ElectronicsDivision {}

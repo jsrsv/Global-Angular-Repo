@@ -1,57 +1,45 @@
-<div class="tabs-page">
-  <div class="tabs-wrapper">
-    <ul class="nav nav-tabs custom-center-tabs">
-      <li class="nav-item">
-        <a class="nav-link"
-           [class.active]="activeTab === 'FMCG'"
-           (click)="activeTab = 'FMCG'">
-          FMCG Division
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link"
-           [class.active]="activeTab === 'CostumesApparel'"
-           (click)="activeTab = 'CostumesApparel'">
-          Costumes & Apparel Division
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link"
-           [class.active]="activeTab === 'Electronics'"
-           (click)="activeTab = 'Electronics'">
-          Electronics Division
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link"
-           [class.active]="activeTab === 'LogisticsServices'"
-           (click)="activeTab = 'LogisticsServices'">
-          Logistics Services Division
-        </a>
-      </li>
-    </ul>
-  </div>
-  <!-- Tab content -->
-  <div class="tab-content-wrapper">
-    <div *ngIf="activeTab === 'FMCG'" class="tab-pane">
-      
-      <app-fmcg-division></app-fmcg-division>
-      <!-- FMCG content here -->
-    </div>
+<div class="division-tabs-container">
 
-    <div *ngIf="activeTab === 'CostumesApparel'" class="tab-pane">
-      <h4>Costumes & Apparel Analytics</h4>
-      <!-- Costumes & Apparel content here -->
-    </div>
+  <ul class="division-tabs nav justify-content-center">
 
-    <div *ngIf="activeTab === 'Electronics'" class="tab-pane">
-      <h4>Electronics Division Analytics</h4>
-      <!-- Electronics content here -->
-    </div>
+    <li class="nav-item">
+      <a class="nav-link"
+         routerLink="FMCG"
+         routerLinkActive="active"
+         [routerLinkActiveOptions]="{ exact: true }">
+         FMCG Division
+      </a>
+    </li>
 
-    <div *ngIf="activeTab === 'LogisticsServices'" class="tab-pane">
-      <h4>Logistics Services Analytics</h4>
-      <!-- Logistics Services content here -->
-    </div>
-  </div>
+    <li class="nav-item">
+      <a class="nav-link"
+         routerLink="CostumesApparel"
+         routerLinkActive="active"
+         [routerLinkActiveOptions]="{ exact: true }">
+         Costumes & Apparel Division
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link"
+         routerLink="Electronics"
+         routerLinkActive="active"
+         [routerLinkActiveOptions]="{ exact: true }">
+         Electronics Division
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link"
+         routerLink="LogisticsServices"
+         routerLinkActive="active"
+         [routerLinkActiveOptions]="{ exact: true }">
+         Logistics Services Division
+      </a>
+    </li>
+
+  </ul>
+
 </div>
+
+<router-outlet></router-outlet>

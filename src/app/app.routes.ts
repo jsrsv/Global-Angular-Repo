@@ -15,6 +15,7 @@ import { Sales } from './Features/sales/sales';
 import { Home } from './Features/home/home';
 import { Login } from './Features/login/login';
 import { Statistics } from './Features/statistics/statistics';
+import { ParentDivisions } from './parent-divisions/parent-divisions';
 import { FmcgDivision } from './fmcg-division/fmcg-division';
 import { CostumesDivision } from './costumes-division/costumes-division';
 import { ElectronicsDivision } from './electronics-division/electronics-division';
@@ -41,10 +42,25 @@ export const routes: Routes =
   { path: 'admin/sales', component: Sales },
   { path: 'admin/home', component: Home },
   { path: 'admin/login', component: Login }, 
-  { path: 'admin/Statistics', component: Statistics },
-  { path: 'admin/FMCG', component: FmcgDivision },
-  { path: 'admin/CostumesApparel', component: CostumesDivision },
-  { path: 'admin/Electronics', component: ElectronicsDivision },
-  { path: 'admin/LogisticsServices', component: LogisticsDivision }
-
+  {
+    path: 'admin/Statistics',
+    component: Statistics,
+    children: [
+      { path: '', pathMatch: 'full', redirectTo: 'FMCG' },
+      { path: 'FMCG', component: FmcgDivision },
+      { path: 'CostumesApparel', component: CostumesDivision },
+      { path: 'Electronics', component: ElectronicsDivision },
+      { path: 'LogisticsServices', component: LogisticsDivision }
+    ]
+  },
+ {
+  path: 'admin/divisions',
+  component: ParentDivisions,   // parent with tabs
+  children: [
+    { path: 'FMCG', component: FmcgDivision },
+    { path: 'CostumesApparel', component: CostumesDivision },
+    { path: 'Electronics', component: ElectronicsDivision },
+    { path: 'LogisticsServices', component: LogisticsDivision }
+  ]
+}
 ];

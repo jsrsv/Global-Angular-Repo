@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-fmcg-division',
-  imports: [],
+  standalone: true,
+  imports: [RouterModule],
   templateUrl: './fmcg-division.html',
-  styleUrl: './fmcg-division.css',
+  styleUrls: ['./fmcg-division.css'],
 })
-export class FmcgDivision {
-
-}
+export class FmcgDivision {}

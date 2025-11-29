@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-costumes-division',
-  imports: [],
+  standalone: true,
+  imports: [RouterModule],
   templateUrl: './costumes-division.html',
-  styleUrl: './costumes-division.css',
+  styleUrls: ['./costumes-division.css'],
 })
-export class CostumesDivision {
-
-}
+export class CostumesDivision {}
