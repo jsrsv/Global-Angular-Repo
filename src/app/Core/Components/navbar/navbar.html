@@ -24,7 +24,7 @@
       <ul class="navbar-nav ms-auto align-items-lg-center">
 
         <li class="nav-item">
-          <a class="nav-link active" href="#">Home</a>
+          <a class="nav-link" [routerLink]="['/admin/home']">Home</a>
         </li>
 
         <li class="nav-item">
@@ -34,8 +34,15 @@
           <a class="nav-link" href="#">Products and Services</a>
         </li>
 
+         
+        <li class="nav-item">
+          <a class="nav-link" href="#">Products and Services</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/admin/login']">Login/Register</a>
+        </li>
         <!-- Dropdown -->
-        <li class="nav-item dropdown">
+        <!-- <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
              data-bs-toggle="dropdown">
             Users
@@ -45,7 +52,7 @@
             <li><a class="dropdown-item" href="#">Chintu</a></li>
             <li><a class="dropdown-item" href="#">Shreya</a></li>
           </ul>
-        </li>
+        </li> -->
 
         <!-- Button on right -->
         <li class="nav-item ms-lg-3">

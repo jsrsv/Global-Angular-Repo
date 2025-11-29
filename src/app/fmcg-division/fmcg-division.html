@@ -1,0 +1,192 @@
+<div class="analysis-container">
+
+  <h2>Sales and Rental Analysis</h2>
+
+  <h3>Scenario:</h3>
+  <p>
+    Global Nexus rents and sells costumes in Samarkand. Products include Halloween costumes,
+    traditional costumes, and festival outfits. The company wants to:
+  </p>
+
+  <ol>
+    <li>Analyze rental frequency across stores.</li>
+    <li>Understand customer preferences and satisfaction.</li>
+    <li>Forecast costume demand for upcoming festivals.</li>
+    <li>Make stocking and pricing decisions.</li>
+  </ol>
+
+  <hr>
+
+  <h3>Step 1: Data Collection & Types</h3>
+
+  <h4>Dataset: Weekly Costume Rentals (Units)</h4>
+
+  <table border="1" cellpadding="8">
+    <thead>
+      <tr>
+        <th>Store</th>
+        <th>Halloween</th>
+        <th>Traditional</th>
+        <th>Festival</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>S1</td><td>12</td><td>8</td><td>5</td></tr>
+      <tr><td>S2</td><td>15</td><td>7</td><td>6</td></tr>
+      <tr><td>S3</td><td>10</td><td>9</td><td>8</td></tr>
+      <tr><td>S4</td><td>8</td><td>10</td><td>5</td></tr>
+      <tr><td>S5</td><td>14</td><td>6</td><td>7</td></tr>
+    </tbody>
+  </table>
+
+  <ul>
+    <li>Type of data: Quantitative, discrete</li>
+    <li>Variable: Number of rentals</li>
+    <li>Independent variable: Costume type</li>
+    <li>Dependent variable: Rentals per store</li>
+  </ul>
+
+  <p><strong>Interpretation:</strong> Data can be summarized using descriptive statistics for business insight.</p>
+
+  <hr>
+
+  <h3>Step 2: Frequency Distribution</h3>
+
+  <h4>Ungrouped Frequency Table of Halloween Rentals</h4>
+
+  <table border="1" cellpadding="8">
+    <thead>
+      <tr>
+        <th>Units Rented</th>
+        <th>Frequency</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>8</td><td>1</td></tr>
+      <tr><td>10</td><td>1</td></tr>
+      <tr><td>12</td><td>1</td></tr>
+      <tr><td>14</td><td>1</td></tr>
+      <tr><td>15</td><td>1</td></tr>
+    </tbody>
+  </table>
+
+  <hr>
+
+  <h3>Step 3: Descriptive Statistics</h3>
+
+  <h4>Halloween Rentals</h4>
+  <ul>
+    <li>Mean = 11.8 units</li>
+    <li>Median = 12 units</li>
+    <li>Mode = No mode (all different)</li>
+  </ul>
+
+  <h4>Traditional Rentals</h4>
+  <ul>
+    <li>Data: 8, 7, 9, 10, 6</li>
+    <li>Mean = 8 units</li>
+    <li>Median = 8 units</li>
+    <li>Mode = No mode</li>
+  </ul>
+
+  <h4>Festival Rentals</h4>
+  <ul>
+    <li>Data: 5, 6, 8, 5, 7</li>
+    <li>Mean = 6.2 units</li>
+    <li>Median = 6 units</li>
+    <li>Mode = 5</li>
+  </ul>
+
+  <p><strong>Interpretation:</strong> Halloween costumes are most popular, festival costumes least rented.</p>
+
+  <hr>
+
+  <h3>Step 4: Measures of Dispersion</h3>
+
+  <h4>Halloween Rentals</h4>
+  <ul>
+    <li>Range = 7</li>
+    <li>Variance ≈ 8.7</li>
+    <li>Standard Deviation ≈ 2.95</li>
+    <li>IQR = 4</li>
+    <li>CV ≈ 25%</li>
+  </ul>
+
+  <h4>Traditional Rentals</h4>
+  <ul>
+    <li>Range = 4</li>
+    <li>SD ≈ 1.58</li>
+    <li>CV ≈ 19.8%</li>
+  </ul>
+
+  <h4>Festival Rentals</h4>
+  <ul>
+    <li>Range = 3</li>
+    <li>SD ≈ 1.30</li>
+    <li>CV ≈ 21%</li>
+  </ul>
+
+  <p><strong>Interpretation:</strong> Halloween rentals are more variable; traditional rentals are more stable.</p>
+
+  <hr>
+
+  <h3>Step 5: Graphical Analysis</h3>
+  <ul>
+    <li>Histogram: X-axis = units rented, Y-axis = frequency</li>
+    <li>Pie Chart: Distribution of rentals by costume type</li>
+    <li>Ogive: Shows 80% of demand ≤14 units</li>
+  </ul>
+
+  <p><strong>Observation:</strong> Halloween costumes occupy ~45% of rentals.</p>
+
+  <hr>
+
+  <h3>Step 6: Skewness & Kurtosis</h3>
+  <ul>
+    <li>Halloween rentals: Right-skewed</li>
+    <li>Traditional rentals: Approximately symmetric</li>
+    <li>Festival rentals: Slight left-skew</li>
+  </ul>
+
+  <hr>
+
+  <h3>Step 7: Inferential Statistics</h3>
+
+  <p><strong>Forecasting Halloween Rentals Next Week</strong></p>
+
+  <p>Sample (n=5): 12, 15, 10, 8, 14</p>
+
+  <p>
+    95% Confidence Interval:<br>
+    CI = 11.8 ± 1.96 × (2.95 / √5)<br>
+    = 11.8 ± 2.59<br>
+    = <strong>[9.21, 14.39]</strong> units per store
+  </p>
+
+  <p><strong>Interpretation:</strong> Expected rentals next week: 9–14 units per store.</p>
+
+  <hr>
+
+  <h3>Step 8: Questionnaire & Survey Insight</h3>
+
+  <p>Sample Questions:</p>
+  <ol>
+    <li>Rate costume variety (1–5)</li>
+    <li>Rate rental experience (1–5)</li>
+    <li>Would you rent again? (Yes/No)</li>
+  </ol>
+
+  <p><strong>Survey Results (n=10):</strong> Average rating = 4.3 → High satisfaction.</p>
+
+  <hr>
+
+  <h3>Step 9: Business Decisions</h3>
+
+  <ul>
+    <li>Stock Halloween costumes higher for the upcoming festival.</li>
+    <li>Traditional costumes need moderate inventory.</li>
+    <li>Festival costumes require limited stock.</li>
+    <li>Use survey feedback to improve service quality.</li>
+  </ul>
+
+</div>

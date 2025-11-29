@@ -1,0 +1,15 @@
+
+.card-pop {
+  border-radius: 16px;
+  overflow: hidden; /* ensures the image follows the rounded edges */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-pop img {
+  border-radius: 0; /* image becomes clipped by parent */
+}
+
+.card-pop:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}

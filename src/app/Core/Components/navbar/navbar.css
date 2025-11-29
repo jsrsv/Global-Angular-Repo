@@ -1,3 +1,38 @@
 .gradient-nav {
   background: linear-gradient(90deg, #8a2be2, #ff69b4);
 }
+
+
+
+
+body {
+  background: linear-gradient(
+    to bottom right,
+    #fff0fa 0%,
+    #f7efff 100%
+  );
+  background-attachment: fixed;
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: -50px;
+  left: -50px;
+  width: 400px;
+  height: 400px;
+  background: rgba(255, 128, 212, 0.25);
+  filter: blur(120px);
+  z-index: -1;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  bottom: -50px;
+  right: -50px;
+  width: 400px;
+  height: 400px;
+  background: rgba(160, 120, 255, 0.25);
+  filter: blur(120px);
+  z-index: -1;
+}

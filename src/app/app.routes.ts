@@ -12,6 +12,14 @@ import { Logistics } from './Features/logistics/logistics';
 import { Goods } from './Features/goods/goods';
 import { Operations } from './Features/operations/operations';
 import { Sales } from './Features/sales/sales';
+import { Home } from './Features/home/home';
+import { Login } from './Features/login/login';
+import { Statistics } from './Features/statistics/statistics';
+import { FmcgDivision } from './fmcg-division/fmcg-division';
+import { CostumesDivision } from './costumes-division/costumes-division';
+import { ElectronicsDivision } from './electronics-division/electronics-division';
+import { LogisticsDivision } from './logistics-division/logistics-division';
+
 
 export const routes: Routes = 
 [
@@ -28,8 +36,15 @@ export const routes: Routes =
   { path: 'admin/HR', component: HumanResources },
   { path: 'admin/HRManagement', component: HumanResourcesManagement },
   { path: 'admin/Logistics', component: Logistics },
-
   { path: 'admin/goods', component: Goods },
   { path: 'admin/operations', component: Operations },
-  { path: 'admin/sales', component: Sales }
+  { path: 'admin/sales', component: Sales },
+  { path: 'admin/home', component: Home },
+  { path: 'admin/login', component: Login }, 
+  { path: 'admin/Statistics', component: Statistics },
+  { path: 'admin/FMCG', component: FmcgDivision },
+  { path: 'admin/CostumesApparel', component: CostumesDivision },
+  { path: 'admin/Electronics', component: ElectronicsDivision },
+  { path: 'admin/LogisticsServices', component: LogisticsDivision }
+
 ];

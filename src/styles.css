@@ -1,7 +1,47 @@
-body {
+/* body {
   background-image: url('/assets/Images/GlobalBackground.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
+} */
+/* body {
+  background: linear-gradient(
+    to bottom right,
+    #fff0fa 0%,
+    #f7efff 100%
+  );
+  background-attachment: fixed;
+} */
+ body {
+  background: linear-gradient(
+    135deg,
+    #ffe6f7 0%, 
+    #f3e8ff 100%
+  );
+  background-attachment: fixed;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: -50px;
+  left: -50px;
+  width: 400px;
+  height: 400px;
+  background: rgba(255, 128, 212, 0.25);
+  filter: blur(120px);
+  z-index: -1;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  bottom: -50px;
+  right: -50px;
+  width: 400px;
+  height: 400px;
+  background: rgba(160, 120, 255, 0.25);
+  filter: blur(120px);
+  z-index: -1;
 }
